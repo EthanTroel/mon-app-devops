@@ -43,7 +43,7 @@ jobs:
         uses: 'azure/aci-deploy@v1'
         with:
           resource-group: ${{ secrets.RESOURCE_GROUP }}
-          dns-name-label: ${{ github.ref_name }}.monappdevops
+          dns-name-label: ${{ github.ref_name }}-monappdevops
           image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/mon-app-devops:${{ github.sha }}
           registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
           registry-username: ${{ secrets.ACR_USERNAME }}
