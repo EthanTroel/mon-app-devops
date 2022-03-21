@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          CI is now set-up!
+          Click here now!
         </a>
       </header>
     </div>
