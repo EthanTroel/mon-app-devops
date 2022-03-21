@@ -6,7 +6,7 @@ name: CI/CD
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ main, staging ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -66,5 +66,5 @@ jobs:
           registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
           registry-username: ${{ secrets.ACR_USERNAME }}
           registry-password: ${{ secrets.ACR_PASSWORD }}
-          name: mon-app-devops
+          name: monappdevops-${{ github.ref_name }}
           location: 'francecentral'
