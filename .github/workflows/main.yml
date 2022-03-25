@@ -35,9 +35,7 @@ jobs:
           # Required recipients' addresses:
           to: damien.pereira@sysentive.com
           # Required sender full name (address can be skipped):
-          from: Tom Dupont
-          # Optional whether this connection use TLS (default is true if server_port is 465)
-          secure: false
+          from: DevOps <devops@sysentive.com>
           # Optional plain body:
           body: Test job of ${{github.repository}} started successfully!
     
